@@ -7,6 +7,6 @@ const jwtConfig: SignOptions = {
   algorithm: 'HS256',
 };
 export default function createTokenAuth(user: TPeople) {
-  const tokenCreated = sign(user, secret, jwtConfig);
-  return tokenCreated;
+  const createdToken = sign(user, secret, jwtConfig);
+  return createdToken; 
 }
